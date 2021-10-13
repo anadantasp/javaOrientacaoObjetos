@@ -21,6 +21,23 @@ public class Preguica extends Animal {
 		}
 	}
 	
+	@Override
+	public void som (int numVezes)
+	{
+		for(int i=0;i<numVezes;i++)
+		{
+			System.out.println("\nEmitindo ruído");
+		}
+	}
+	
+	@Override
+	public void funcao (int numVezes)
+	{
+		for(int i=0;i<numVezes;i++)
+		{
+			System.out.println("\nEstá subindo na árvore");
+		}
+	}
 
 	public int getQuantidadeDedos() {
 		return quantidadeDedos;

@@ -1,9 +1,10 @@
 package pacoteJava;
 
-public class Animal {
+public abstract class Animal {
 
 	private String nome;
 	private int idade;
+	
 	
 	public Animal(String nome, int idade)
 	{
@@ -12,6 +13,9 @@ public class Animal {
 		this.idade=idade;
 		
 	}
+	
+	abstract public void som (int numVezes);
+	abstract public void funcao(int numVezes);
 
 	public String getNome() {
 		return nome;

@@ -11,6 +11,7 @@ public class TesteCachorro {
 		int idade;
 		String comportamento;
 		String tipo;
+		Animal animal;
 		
 		Scanner leia = new Scanner(System.in);
 		
@@ -22,11 +23,16 @@ public class TesteCachorro {
 		tipo = leia.next();
 		System.out.println("Informe o comportamento do seu animal: ");
 		comportamento = leia.next();
+		
 	
 		
 		
 		Cachorro seuCachorro = new Cachorro(nome,idade,tipo,comportamento);
 		seuCachorro.imprimirInfo();
+		animal=seuCachorro;
+		animal.som(1);
+		animal.funcao(1);
+	
 	}
 
 }

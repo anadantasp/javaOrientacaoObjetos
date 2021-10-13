@@ -10,6 +10,7 @@ public class TestePreguica {
 		String nome;
 		int idade;
 		int numeroDedos;
+		Animal animal;
 		
 		Scanner leia = new Scanner (System.in);
 		
@@ -22,6 +23,11 @@ public class TestePreguica {
 		
 		Preguica preguica1 = new Preguica(nome,idade,numeroDedos);
 		preguica1.numeroDedos();
+		animal = preguica1;
+		animal.som(1);
+		animal.funcao(1);
+		
+	
 		
 		
 	}

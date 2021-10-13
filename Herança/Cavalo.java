@@ -17,6 +17,24 @@ public class Cavalo extends Animal{
 		System.out.println("\nNome: "+getNome()+"\nIdade: "+getIdade()
 		+"\nCor da pelagem: "+corPelagem+"\nPeso: "+kilos);
 	}
+	
+	@Override
+	public void som (int numVezes)
+	{
+		for(int i=0;i<numVezes;i++)
+		{
+			System.out.println("\nO cavalo está relinchando!");
+		}
+	}
+	
+	@Override
+	public void funcao (int numVezes)
+	{
+		for(int i=0;i<numVezes;i++)
+		{
+			System.out.println("\nEstá correndo");
+		}
+	}
 
 	public String getCorPelagem() {
 		return corPelagem;

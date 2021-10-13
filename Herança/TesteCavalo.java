@@ -10,6 +10,7 @@ public class TesteCavalo {
         int idade;
         String cor;
         float peso;
+        Animal animal;
         
         Scanner leia = new Scanner (System.in);
         
@@ -24,7 +25,9 @@ public class TesteCavalo {
         
         Cavalo cavalo1 = new Cavalo (nome,idade,cor,peso);
         cavalo1.imprimirInfo();
-        
+        animal = cavalo1;
+        animal.som(1);
+        animal.funcao(1);
 	}
 
 }
